@@ -1,0 +1,76 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .card > div {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .image img:hover {
+    transform: scale(1.1);
+  }
+  
+  .card > div p {
+    margin: 10px 15px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .card > div p:first-of-type {
+    font-size: 1.2em;
+    color: #007bff;
+  }
+  
+  .card > div p:nth-of-type(2) {
+    color: #555;
+  }
+  
+  .card > div p:last-of-type {
+    color: #28a745;
+  }
+  
+  .header {
+    text-align: center;
+    color: #007bff;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
